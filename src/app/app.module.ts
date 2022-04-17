@@ -12,7 +12,7 @@ import { DirectoryComponent } from "./directory/directory.component";
 
 const routes: Routes = [
   {
-    path: 'directory',
+    path: 'directory/:ninja',
     component: DirectoryComponent
   },
   {
