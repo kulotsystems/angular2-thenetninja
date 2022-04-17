@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DirectoryComponent } from "./directory/directory.component";
 
 import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
-import { DirectoryComponent } from "./directory/directory.component";
+
 
 
 const routes: Routes = [
   {
-    path: 'directory/:ninja',
+    path: 'directory',
     component: DirectoryComponent
   },
   {
@@ -25,7 +26,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule,
