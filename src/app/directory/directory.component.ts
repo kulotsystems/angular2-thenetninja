@@ -22,6 +22,8 @@ export class DirectoryComponent implements OnInit {
     }
   ];
 
+  term = "";
+
   constructor() { }
 
   ngOnInit(): void {

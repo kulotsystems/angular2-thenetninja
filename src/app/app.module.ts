@@ -8,6 +8,7 @@ import { DirectoryComponent } from "./directory/directory.component";
 import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FilterPipe } from './filter.pipe';
 
 
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
