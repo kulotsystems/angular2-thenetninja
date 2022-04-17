@@ -11,5 +11,10 @@ export class AppComponent {
   ninja = {
     name: 'Ryu',
     belt: 'Red'
+  };
+
+  yell(e: Event) {
+    alert('I am yelling!');
+    console.log(e);
   }
 }

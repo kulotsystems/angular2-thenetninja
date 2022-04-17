@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +11,10 @@ export class HomeComponent implements OnInit {
     name: '',
     belt: ''
   }
+  @Output() onYell = new EventEmitter();
 
-  alertMe(val: string) {
-    alert(val);
+  fireYellEvent(e: Event) {
+    this.onYell.emit(e);
   }
 
   constructor() { }
